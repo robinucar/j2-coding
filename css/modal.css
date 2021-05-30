@@ -1,0 +1,167 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #707070;
+}
+
+.modal {
+  background-color: #f2f2f2;
+  margin-top: 10rem;
+}
+
+.modal .modal__body {
+  padding: 1.25rem;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.modal .modal__body--icon i {
+  color: #098c19;
+  font-size: 1.56rem;
+  position: absolute;
+  top: 1.30rem;
+}
+
+.modal .modal__body--title {
+  margin-left: 2.18rem;
+  font-size: 1.87rem;
+}
+
+.modal .modal__body--text {
+  margin-top: 0.14rem;
+  color: #757575;
+  font-size: 1.5rem;
+}
+
+.modal .modal__footer {
+  padding: 0.62rem 0;
+  text-align: center;
+}
+
+.modal .modal__footer--btn button {
+  width: 80%;
+  padding: 0.62rem;
+  margin: 0.18rem;
+  border-radius: 0.31rem;
+  outline: none;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.modal .modal__footer--btn .btn--continue,
+.modal .modal__footer--btn .btn--confirm {
+  color: #fff;
+  background-color: #000;
+}
+
+.modal__confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal__confirmation--box {
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.62rem;
+  padding: 0.62rem;
+}
+
+.modal__confirmation--box .btn--confirm {
+  padding: 0.31rem;
+  width: 70%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.31rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.modal__confirmation--box .modal__confirmation--close {
+  position: absolute;
+  top: 0.62rem;
+  right: 0.62rem;
+  cursor: pointer;
+  color: #FF0000;
+}
+
+.modal__confirmation--active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 62rem) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .modal {
+    width: 46.87rem;
+  }
+  .wrapper .modal .modal__body--icon i {
+    font-size: 2.18rem;
+    position: relative;
+    top: 2rem;
+    left: 2.5rem;
+  }
+  .wrapper .modal .modal__body--title {
+    width: 31.25rem;
+    margin: auto;
+  }
+  .wrapper .modal .modal__footer--btn button {
+    width: 40%;
+  }
+  .modal__confirmation--box {
+    max-width: 25%;
+    height: 30%;
+  }
+  .btn--confirm {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

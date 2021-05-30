@@ -1,0 +1,45 @@
+@media only screen and (min-width: 62rem) {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      
+
+      .modal {
+        width: 46.87rem;
+        
+        .modal__body {
+            &--icon i {
+                font-size: 2.18rem;
+
+                position: relative;
+                top: 2rem;
+                left: 2.5rem;
+              }
+
+              &--title {
+                width: 31.25rem;
+                margin: auto;
+              }
+        }
+         .modal__footer {
+            &--btn {
+                button {
+                    width: 40%;
+                  }
+            }
+         }
+
+         
+      }
+    }
+
+    .modal__confirmation--box {
+        max-width: 25%;
+        height: 30%;
+      }
+      .btn--confirm {
+        width: 40%;
+      }
+}

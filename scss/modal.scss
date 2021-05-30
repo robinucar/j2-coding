@@ -1,0 +1,122 @@
+$main-background-color: #707070;
+$modal-background-color: #f2f2f2;
+$text-color:#757575;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: $main-background-color;
+  }
+
+  .modal {
+    background-color: $modal-background-color;
+    margin-top: 10rem;
+
+    .modal__body {
+        padding: 1.25rem;
+        border-bottom: 1px solid #000;
+        position: relative;
+
+        &--icon i {
+            color: #098c19;
+            font-size: 1.56rem;
+          
+            position: absolute;
+            top: 1.30rem;
+          }
+        
+          &--title {
+            margin-left: 2.18rem;
+            font-size: 1.87rem;
+          }
+          &--text {
+            margin-top: 0.14rem;
+            color: $text-color;
+            font-size: 1.5rem;
+          }
+      }
+      .modal__footer {
+          padding:0.62rem 0 ;
+        text-align: center;
+
+        &--btn {
+            button {
+                width: 80%;
+                padding: 0.62rem;
+                margin: 0.18rem;
+                border-radius: 0.31rem;
+                outline: none;
+                border: 1px solid #000;
+                cursor: pointer;
+              }
+
+              .btn--continue,
+              .btn--confirm {
+                    color: #fff;
+                    background-color: #000;
+                    }
+        } 
+          
+      }
+
+  }
+
+  .modal__confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+
+    &--box {
+        position: relative;
+        background-color: #fff;
+        width: 50%;
+        height: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0.62rem;
+        padding: 0.62rem;
+
+        .btn--confirm {
+            padding: 0.31rem;
+            width: 70%;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 0.31rem;
+            color:#fff;
+            background-color: #000;
+          }
+          .modal__confirmation--close {
+            position: absolute;
+            top: 0.62rem;
+            right: 0.62rem;
+            cursor: pointer;
+            color:#FF0000;
+          }
+
+         
+      }
+     
+  }
+  .modal__confirmation--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @import 'desktop';
