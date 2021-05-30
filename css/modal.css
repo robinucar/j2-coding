@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -45,18 +45,21 @@ body {
 
 .modal .modal__footer--btn button {
   width: 80%;
+  font-size: 15px;
   padding: 0.62rem;
   margin: 0.18rem;
   border-radius: 0.31rem;
   outline: none;
   border: 1px solid #000;
   cursor: pointer;
+  background: #F2F2F2;
 }
 
 .modal .modal__footer--btn .btn--continue,
 .modal .modal__footer--btn .btn--confirm {
   color: #fff;
   background-color: #000;
+  font-size: 15px;
 }
 
 .modal__confirmation {
